@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Fitness Coach</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>🏋️ AI Fitness Coach</h1>
+    <p class="subtitle">Generate your personalized fitness plan powered by OpenRouter AI</p>
+
+    <form action="/generate" method="POST">
+        <label for="goal">Fitness Goal:</label>
+        <input type="text" id="goal" name="goal"
+               placeholder="e.g., lose fat, gain muscle, improve endurance" required>
+
+        <label for="level">Fitness Level:</label>
+        <select id="level" name="level" required>
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select>
+
+        <button type="submit" id="submit-btn">Generate My Plan 🚀</button>
+    </form>
+</div>
+
+<script src="/static/script.js"></script>
+</body>
+</html>

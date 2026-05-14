@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #111;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 50%;
+    max-width: 700px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.result-container {
+    text-align: left;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin: 12px 0 4px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    border: none;
+    font-size: 15px;
+    background: #222;
+    color: #fff;
+    border: 1px solid #333;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #28a745;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    background: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #218838;
+}
+
+button:disabled {
+    background: #555;
+    cursor: not-allowed;
+}
+
+.result-box {
+    background: #1a1a1a;
+    padding: 24px;
+    border-radius: 12px;
+    text-align: left;
+    color: #e0e0e0;
+    border: 1px solid #333;
+    margin-top: 20px;
+    line-height: 1.7;
+}
+
+.result-box h1, .result-box h2, .result-box h3 {
+    color: #28a745;
+    margin: 16px 0 8px;
+}
+
+.result-box ul, .result-box ol {
+    padding-left: 20px;
+    margin: 8px 0;
+}
+
+.result-box li {
+    margin: 4px 0;
+}
+
+.result-box strong {
+    color: #fff;
+}
+
+.back-btn {
+    display: inline-block;
+    margin-top: 24px;
+    color: #28a745;
+    text-decoration: none;
+    font-size: 15px;
+    border: 1px solid #28a745;
+    padding: 10px 20px;
+    border-radius: 8px;
+    transition: background 0.2s;
+}
+
+.back-btn:hover {
+    background: #28a745;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+}
